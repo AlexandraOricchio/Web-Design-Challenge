@@ -21,8 +21,7 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-custom">
 
-        <button class="navbar-toggler" data-toggle="collapse" data-target="#collapse_target"
-            aria-controls="#collapse_target" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#collapse_target">
             <span class="navbar-toggler-icon"></span>
         </button>
 
@@ -58,19 +57,15 @@
     <div class="container">
         <div class="row">
 
-            <div class="col-sm-12 col-lg-8">
+            <div class="col-sm-12 col-lg-8 col align-self-center">
                 <div class="box">
-                    <h2>Summary: Latitude vs. X</h2>
+                    <h2>Max Temperature</h2>
                     <hr>
-                    <img src="Resources\assets\images\Fig1.png" alt="plot 1" class="indexplot">
-                    <p class="indextext">The purpose of this project was to analyze how weather changes as you get closer to the equator.
-                        To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a
-                        dataset on over 500 cities. </p>
-                    <br>
-                    <p class="indextext">After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs.
-                        latitude. Factors we looked at included: temperature, cloudiness, wind speed, and humidity.
-                        This site provides the source data and visualizations created as part of the analysis, as well
-                        as explanations and descriptions of any trends and correlations witnessed.</p>
+                    <img src="Resources\assets\images\Fig1.png" alt="plot 1" class="soloplot">
+                    <p>As expected, the weather becomes significantly warmer as one approaches the equator (0 Degrees
+                        Latitude). More interestingly, however, is the fact that the southern hemisphere tends to be
+                        warmer this time of year than the northern hemisphere. This may be due to the tilt of the earth
+                        at the time of the year this data was gathered.</p>
                 </div>
             </div>
 
@@ -78,36 +73,32 @@
                 <div class="box">
                     <h2>Visualizations</h2>
                     <hr>
-                        <div class="row">
-                            <div class="col-sm-3 col-lg-6 col align-self-center">
-                                <a href="./temp.html">
-                                    <img src="Resources\assets\images\Fig1.png" alt="plot 1" class="plots">
-                                </a>
-                            </div>
-                            <div class="col-sm-3 col-lg-6 col align-self-center">
-                                <a href="./humidity.html">
-                                    <img src="Resources\assets\images\Fig2.png" alt="plot 2" class="plots">
-                                </a>
-                            </div>
-                            <div class="col-sm-3 col-lg-6 col align-self-center">
-                                <a href="./cloud.html">
-                                    <img src="Resources\assets\images\Fig3.png" alt="plot 3" class="plots">
-                                </a>
-                            </div>
-                            <div class="col-sm-3 col-lg-6 col align-self-center">
-                                <a href="./wind.html">
-                                    <img src="Resources\assets\images\Fig4.png" alt="plot 4" class="plots">
-                                </a>
-                            </div>
+                    <div class="row">
+                        <div class="col-sm-3 col-lg-6 col align-self-center">
+                            <a href="./temp.html">
+                                <img src="Resources\assets\images\Fig1.png" alt="plot 1" class="activeplot">
+                            </a>
                         </div>
+                        <div class="col-sm-3 col-lg-6 col align-self-center">
+                            <a href="./humidity.html">
+                                <img src="Resources\assets\images\Fig2.png" alt="plot 2" class="plots">
+                            </a>
+                        </div>
+                        <div class="col-sm-3 col-lg-6 col align-self-center">
+                            <a href="./cloud.html">
+                                <img src="Resources\assets\images\Fig3.png" alt="plot 3" class="plots">
+                            </a>
+                        </div>
+                        <div class="col-sm-3 col-lg-6 col align-self-center">
+                            <a href="./wind.html">
+                                <img src="Resources\assets\images\Fig4.png" alt="plot 4" class="plots">
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
 
         </div>
-    </div>
-
-    <div class="footer">
-        <p> </p>
     </div>
 
 </body>
